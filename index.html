@@ -21,9 +21,43 @@
     />
 
     <title>Gayathri Ramakrishnan</title>
+    <style>
+      header {
+        background: linear-gradient(
+            to right,
+            hsla(64, 77%, 68%, 0.616),
+            hsla(120, 85%, 50%, 0.629)
+          ),
+          url(img/main.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <!-- nav bar -->
+    <header>
+      <nav class="nav-wraper transparent white-text">
+        <div class="container">
+          <a href="" class="brand-logo">Gayathri.R</a>
+          <a href="" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="">Work</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+
+          <ul class="sidenav orange lighten-2" id="mobile-links">
+            <li><a href="" class="white-text">Work</a></li>
+            <li><a href="" class="white-text">About</a></li>
+            <li><a href="" class="white-text">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- photo/grid -->
 
@@ -36,10 +70,16 @@
     <!-- contact form -->
 
     <!-- footer -->
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Compiled and minified JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+      });
+    </script>
   </body>
 </html>
