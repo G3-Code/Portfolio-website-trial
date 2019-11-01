@@ -43,26 +43,22 @@
   <body>
     <!-- nav bar -->
     <header>
-      <nav class="nav-wraper white black-text">
+      <nav class="nav-wrapper transparent">
         <div class="container">
-          <a href="" class="brand-logo orange-text darken-4">Gayathri.R</a>
-          <a
-            href=""
-            class="sidenav-trigger orange-text"
-            data-target="mobile-links"
-          >
+          <a href="" class="brand-logo ">Gayathri.R</a>
+          <a href="" class="sidenav-trigger" data-target="mobile-links">
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="" class="orange-text">Work</a></li>
-            <li><a href="" class="orange-text">About</a></li>
-            <li><a href="" class="orange-text">Contact</a></li>
-          </ul>
-
-          <ul class="sidenav orange" id="mobile-links">
             <li><a href="" class="white-text">Work</a></li>
             <li><a href="" class="white-text">About</a></li>
             <li><a href="" class="white-text">Contact</a></li>
+          </ul>
+
+          <ul class="sidenav orange darken-4" id="mobile-links">
+            <li><a href="" class="white-text ">Work</a></li>
+            <li><a href="" class="white-text ">About</a></li>
+            <li><a href="" class="white-text ">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -127,13 +123,20 @@
     </section>
 
     <!-- parallax -->
-    <div class="prallax-container">
+    <div class="parallax-container">
       <div class="parallax">
         <img src="img/first.jpg" alt="" class="responsive-img" />
       </div>
     </div>
 
     <!-- Services/tabs -->
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione
+        placeat eveniet reiciendis, veniam libero modi cum eum esse optio ipsum.
+        Nostrum facere, nihil quo deleniti nesciunt cumque vel. Molestias?
+      </p>
+    </div>
 
     <!-- parallax -->
 
@@ -150,6 +153,7 @@
       $(document).ready(function() {
         $(".sidenav").sidenav();
         $(".materialboxed").materialbox();
+        $(".parallax").parallax();
       });
     </script>
   </body>
