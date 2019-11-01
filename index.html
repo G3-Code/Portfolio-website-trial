@@ -67,9 +67,13 @@
     <section class="container section" id="photos">
       <div class="row">
         <div class="col s12 l4">
-          <img src="img/nature1.jpg" alt="" class="responsive-img" />
+          <img
+            src="img/nature1.jpg"
+            alt=""
+            class="responsive-img materialboxed"
+          />
         </div>
-        <div class="col s12 l6">
+        <div class="col s12 l6 offset-l1">
           <h2 class="indigo-text text-darken-4">Project 1</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
@@ -80,10 +84,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12 l4">
-          <img src="img/nature2.jpg" alt="" class="responsive-img" />
+        <div class="col s12 l4 push-l7 offset-l1">
+          <img
+            src="img/nature2.jpg"
+            alt=""
+            class="responsive-img materialboxed"
+          />
         </div>
-        <div class="col s12 l6">
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
           <h2 class="indigo-text text-darken-4">Project 2</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
@@ -95,9 +103,13 @@
       </div>
       <div class="row">
         <div class="col s12 l4">
-          <img src="img/nature3.jpg" alt="" class="responsive-img" />
+          <img
+            src="img/nature3.jpg"
+            alt=""
+            class="responsive-img materialboxed"
+          />
         </div>
-        <div class="col s12 l6">
+        <div class="col s12 l6 offset-l1">
           <h2 class="indigo-text text-darken-4">Project 3</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
@@ -127,6 +139,7 @@
     <script>
       $(document).ready(function() {
         $(".sidenav").sidenav();
+        $(".materialboxed").materialbox();
       });
     </script>
   </body>
