@@ -32,256 +32,292 @@
         background-size: cover;
         background-position: center;
         min-height: 100vh;
+        z-index: 9;
       }
 
       .section {
         padding-top: 4vw;
         padding-bottom: 4vw;
       }
+
+      progress {
+        -webkit-appearance: progress-bar;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 1em;
+        width: 10em;
+        vertical-align: -0.2em;
+      }
+
+      progress.progress-bar {
+        position: fixed;
+        height: 4px;
+        top: 60px;
+        width: 100%;
+        transition: width 0.3s linear;
+        -webkit-appearance: none;
+      }
+      progress::-webkit-progress-value {
+        background-color: orange;
+      }
+      progress::-moz-progress-value {
+        background-color: orange;
+      }
     </style>
   </head>
   <body>
-    <!-- nav bar -->
-    <header>
-      <nav class="nav-wrapper transparent">
-        <div class="container">
-          <a href="" class="brand-logo ">Gayathri.R</a>
-          <a href="" class="sidenav-trigger" data-target="mobile-links">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="" class="white-text">Work</a></li>
-            <li><a href="" class="white-text">About</a></li>
-            <li><a href="" class="white-text">Contact</a></li>
-            <li>
-              <a href="" class="btn-floating btn-small orange darken-4">
-                <i class="fab fa-facebook "></i>
+    <div class="content-wrapper">
+      <!-- nav bar -->
+      <header>
+        <div class="navbar-fixed">
+          <nav class="nav-wrapper transparent">
+            <div class="container">
+              <a href="" class="brand-logo ">Gayathri.R</a>
+              <a href="" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
               </a>
-            </li>
-            <li>
-              <a href="" class="btn-floating btn-small orange darken-4">
-                <i class="fab fa-twitter "></i>
-              </a>
-            </li>
-            <li>
-              <a href="" class="btn-floating btn-small orange darken-4">
-                <i class="fab fa-linkedin "></i>
-              </a>
-            </li>
-            <li>
-              <a href="" class="btn-floating btn-small orange darken-4">
-                <i class="fab fa-instagram "></i>
-              </a>
-            </li>
-          </ul>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="" class="white-text">Work</a></li>
+                <li><a href="" class="white-text">About</a></li>
+                <li><a href="" class="white-text">Contact</a></li>
+                <li>
+                  <a href="" class="btn-floating btn-small orange darken-4">
+                    <i class="fab fa-facebook "></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="btn-floating btn-small orange darken-4">
+                    <i class="fab fa-twitter "></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="btn-floating btn-small orange darken-4">
+                    <i class="fab fa-linkedin "></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="btn-floating btn-small orange darken-4">
+                    <i class="fab fa-instagram "></i>
+                  </a>
+                </li>
+              </ul>
 
-          <ul class="sidenav orange darken-4" id="mobile-links">
-            <li><a href="" class="white-text ">Work</a></li>
-            <li><a href="" class="white-text ">About</a></li>
-            <li><a href="" class="white-text ">Contact</a></li>
-          </ul>
+              <ul class="sidenav orange darken-4" id="mobile-links">
+                <li><a href="" class="white-text ">Work</a></li>
+                <li><a href="" class="white-text ">About</a></li>
+                <li><a href="" class="white-text ">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <progress value="0" max="100" class="progress-bar"></progress>
         </div>
-      </nav>
-    </header>
+      </header>
 
-    <!-- photo/grid -->
-    <section class="container section" id="photos">
-      <div class="row">
-        <div class="col s12 l4">
-          <img
-            src="img/nature1.jpg"
-            alt=""
-            class="responsive-img materialboxed"
-          />
-        </div>
-        <div class="col s12 l6 offset-l1">
-          <h2 class="indigo-text text-darken-4">Project 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
-            error enim? Magnam repellat libero odio repellendus impedit
-            explicabo, unde nemo obcaecati modi, omnis, commodi debitis.
-            Doloremque fuga deleniti animi?
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 l4 push-l7 offset-l1">
-          <img
-            src="img/nature2.jpg"
-            alt=""
-            class="responsive-img materialboxed"
-          />
-        </div>
-        <div class="col s12 l6 pull-l5 right-align offset-l1">
-          <h2 class="indigo-text text-darken-4">Project 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
-            error enim? Magnam repellat libero odio repellendus impedit
-            explicabo, unde nemo obcaecati modi, omnis, commodi debitis.
-            Doloremque fuga deleniti animi?
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 l4">
-          <img
-            src="img/nature3.jpg"
-            alt=""
-            class="responsive-img materialboxed"
-          />
-        </div>
-        <div class="col s12 l6 offset-l1">
-          <h2 class="indigo-text text-darken-4">Project 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
-            error enim? Magnam repellat libero odio repellendus impedit
-            explicabo, unde nemo obcaecati modi, omnis, commodi debitis.
-            Doloremque fuga deleniti animi?
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- parallax -->
-    <div class="parallax-container">
-      <div class="parallax">
-        <img src="img/first.jpg" alt="" class="responsive-img" />
-      </div>
-      <section class="container section" id="services">
+      <!-- photo/grid -->
+      <section class="container section" id="photos">
         <div class="row">
-          <div class="col s12 l4 white-text">
-            <h2 class="indigo-text text-darken-2">
-              What I do..
-            </h2>
+          <div class="col s12 l4">
+            <img
+              src="img/nature1.jpg"
+              alt=""
+              class="responsive-img materialboxed"
+            />
+          </div>
+          <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">Project 1</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat,
-              sed molestias facere sequi delectus excepturi error culpa eos unde
-              expedita illum possimus corrupti iste odit assumenda nesciunt
-              exercitationem aliquam natus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
+              error enim? Magnam repellat libero odio repellendus impedit
+              explicabo, unde nemo obcaecati modi, omnis, commodi debitis.
+              Doloremque fuga deleniti animi?
             </p>
           </div>
-          <div class="col s12 l6 offset-l2 white-text">
-            <ul class="tabs">
-              <li class="tab col s6">
-                <a href="#photography" class="indigo-text text-darken-4"
-                  >Photography</a
-                >
-              </li>
-              <li class="tab col s6">
-                <a href="#editing" class="indigo-text text-darken-4">Editing</a>
-              </li>
-            </ul>
-            <div class="col s12" id="photography">
-              <p class="flow-text indigo-text text-darken-4">
-                PHOTOGRAPHY
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus dignissimos distinctio sapiente ducimus illum,
-                doloremque quos vel sequi similique. Aliquid eaque dicta ducimus
-                ut nihil quam sit. Sequi, dolore id.
-              </p>
-            </div>
-            <div class="col s12" id="editing">
-              <p class="flow-text indigo-text text-darken-4">
-                EDITING
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus dignissimos distinctio sapiente ducimus illum,
-                doloremque quos vel sequi similique. Aliquid eaque dicta ducimus
-                ut nihil quam sit. Sequi, dolore id.
-              </p>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col s12 l4 push-l7 offset-l1">
+            <img
+              src="img/nature2.jpg"
+              alt=""
+              class="responsive-img materialboxed"
+            />
+          </div>
+          <div class="col s12 l6 pull-l5 right-align offset-l1">
+            <h2 class="indigo-text text-darken-4">Project 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
+              error enim? Magnam repellat libero odio repellendus impedit
+              explicabo, unde nemo obcaecati modi, omnis, commodi debitis.
+              Doloremque fuga deleniti animi?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 l4">
+            <img
+              src="img/nature3.jpg"
+              alt=""
+              class="responsive-img materialboxed"
+            />
+          </div>
+          <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">Project 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
+              error enim? Magnam repellat libero odio repellendus impedit
+              explicabo, unde nemo obcaecati modi, omnis, commodi debitis.
+              Doloremque fuga deleniti animi?
+            </p>
           </div>
         </div>
       </section>
-    </div>
 
-    <!-- contact form -->
-    <section class="container section" id="contact">
-      <div class="row">
-        <div class="col s12 l5">
-          <h2 class="indigo-text text-darken-4">Get in touch</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-            aut! Nemo reiciendis inventore quibusdam sint, esse iusto iure quos,
-            ad amet officia ut corrupti, dolorum tenetur accusamus vitae totam
-            nostrum?
-          </p>
+      <!-- parallax -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="img/first.jpg" alt="" class="responsive-img" />
         </div>
-        <div class="col s12 l5 offset-l2">
-          <form action="">
-            <div class="input-field">
-              <i class="material-icons prefix">email</i>
-              <input type="email" id="email" />
-              <label for="email">Your Email</label>
-            </div>
-            <div class="input-field">
-              <i class="material-icons prefix">message</i>
-              <textarea id="message" class="materialize-textarea"></textarea>
-              <label for="message">Your Message</label>
-            </div>
-            <div class="input-field">
-              <input type="text" id="date" class="datepicker" />
-              <label for="date">Choose a date you need me for..</label>
-            </div>
-            <div class="input-field">
-              <p>Services required..</p>
+        <section class="container section" id="services">
+          <div class="row">
+            <div class="col s12 l4 white-text">
+              <h2 class="indigo-text text-darken-2">
+                What I do..
+              </h2>
               <p>
-                <label
-                  ><input type="checkbox" /> <span>Photography</span></label
-                >
-              </p>
-              <p>
-                <label><input type="checkbox" /> <span>Editing</span></label>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat, sed molestias facere sequi delectus excepturi error
+                culpa eos unde expedita illum possimus corrupti iste odit
+                assumenda nesciunt exercitationem aliquam natus.
               </p>
             </div>
-            <div class="input-field center">
-              <div class="btn">Submit</div>
+            <div class="col s12 l6 offset-l2 white-text">
+              <ul class="tabs">
+                <li class="tab col s6">
+                  <a href="#photography" class="indigo-text text-darken-4"
+                    >Photography</a
+                  >
+                </li>
+                <li class="tab col s6">
+                  <a href="#editing" class="indigo-text text-darken-4"
+                    >Editing</a
+                  >
+                </li>
+              </ul>
+              <div class="col s12" id="photography">
+                <p class="flow-text indigo-text text-darken-4">
+                  PHOTOGRAPHY
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus dignissimos distinctio sapiente ducimus illum,
+                  doloremque quos vel sequi similique. Aliquid eaque dicta
+                  ducimus ut nihil quam sit. Sequi, dolore id.
+                </p>
+              </div>
+              <div class="col s12" id="editing">
+                <p class="flow-text indigo-text text-darken-4">
+                  EDITING
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus dignissimos distinctio sapiente ducimus illum,
+                  doloremque quos vel sequi similique. Aliquid eaque dicta
+                  ducimus ut nihil quam sit. Sequi, dolore id.
+                </p>
+              </div>
             </div>
-          </form>
-        </div>
+          </div>
+        </section>
       </div>
-    </section>
 
-    <!-- footer -->
-    <footer class="page-footer grey darken-3">
-      <div class="container">
+      <!-- contact form -->
+      <section class="container section" id="contact">
         <div class="row">
-          <div class="col s12 l6">
-            <h5>About me</h5>
+          <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">Get in touch</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              voluptate? Quam alias maiores placeat? Amet culpa adipisci
-              officiis iusto quas, recusandae incidunt, ut ullam repudiandae
-              veniam ipsa perspiciatis veritatis excepturi?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+              aut! Nemo reiciendis inventore quibusdam sint, esse iusto iure
+              quos, ad amet officia ut corrupti, dolorum tenetur accusamus vitae
+              totam nostrum?
             </p>
           </div>
-          <div class="col s12 l4 offset-l2">
-            <h5>Connect</h5>
-            <ul>
-              <li>
-                <a href="" class="grey-text text-lighten-3">Facebook</a>
-              </li>
-              <li><a href="" class="grey-text text-lighten-3">Twitter</a></li>
-              <li><a href="" class="grey-text text-lighten-3">Github</a></li>
-              <li><a href="" class="grey-text text-lighten-3">LinkedIn</a></li>
-            </ul>
+          <div class="col s12 l5 offset-l2">
+            <form action="">
+              <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="email" />
+                <label for="email">Your Email</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">message</i>
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Your Message</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="date" class="datepicker" />
+                <label for="date">Choose a date you need me for..</label>
+              </div>
+              <div class="input-field">
+                <p>Services required..</p>
+                <p>
+                  <label
+                    ><input type="checkbox" /> <span>Photography</span></label
+                  >
+                </p>
+                <p>
+                  <label><input type="checkbox" /> <span>Editing</span></label>
+                </p>
+              </div>
+              <div class="input-field center">
+                <div class="btn">Submit</div>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
-      <div class="footer-copyright grey darken-4">
-        <div class="container center-align">
-          &copy; 2019 Gayathri Ramakrishnan
-        </div>
-      </div>
-    </footer>
+      </section>
 
+      <!-- footer -->
+      <footer class="page-footer grey darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 l6">
+              <h5>About me</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                voluptate? Quam alias maiores placeat? Amet culpa adipisci
+                officiis iusto quas, recusandae incidunt, ut ullam repudiandae
+                veniam ipsa perspiciatis veritatis excepturi?
+              </p>
+            </div>
+            <div class="col s12 l4 offset-l2">
+              <h5>Connect</h5>
+              <ul>
+                <li>
+                  <a href="" class="grey-text text-lighten-3">Facebook</a>
+                </li>
+                <li><a href="" class="grey-text text-lighten-3">Twitter</a></li>
+                <li><a href="" class="grey-text text-lighten-3">Github</a></li>
+                <li>
+                  <a href="" class="grey-text text-lighten-3">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+          <div class="container center-align">
+            &copy; 2019 Gayathri Ramakrishnan
+          </div>
+        </div>
+      </footer>
+    </div>
     <!-- Compiled and minified JQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript - JQuery-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
     <script>
       $(document).ready(function() {
@@ -291,6 +327,21 @@
         $(".tabs").tabs();
         $(".datepicker").datepicker({
           disableWeekends: true
+        });
+        $(window).scroll(function() {
+          // alert("scrolling window");
+          var cont_height = $(".content-wrapper").outerHeight();
+          var scroll_top = $(window).scrollTop();
+          var doc_height = $(window).outerHeight();
+          var progress = (scroll_top / (cont_height - doc_height)) * 100;
+
+          // range of progress
+          function round(val, min, max) {
+            return val > max ? max : val < min ? min : val;
+          }
+
+          var final_val = round(progress, 0, 100);
+          $(".progress-bar").attr("value", final_val);
         });
       });
     </script>
